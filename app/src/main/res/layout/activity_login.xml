@@ -94,14 +94,15 @@
 
     <TextView
         android:id="@+id/textViewNewUser"
-        android:layout_width="140dp"
-        android:layout_height="25dp"
-        android:text="Register For New user"
+        android:layout_width="180dp"
+        android:layout_height="28dp"
+        android:text="Register For New User"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintVertical_bias="0.139" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

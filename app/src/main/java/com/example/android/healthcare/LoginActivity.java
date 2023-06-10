@@ -28,7 +28,12 @@ public class LoginActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
+                String username=edUserName.getText().toString();
+                String password=edPassword.getText().toString();
+                if(username.length()==0 || password.length()==0)
+                    Toast.makeText(getApplicationContext(),"Please Fill All Details",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
             }
         });
     }
