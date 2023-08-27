@@ -1,5 +1,5 @@
 package com.example.android.healthcare;
-
+//1st activity
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -14,8 +14,9 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     EditText edUserName,edPassword;
-    Button btn;
+    Button btn,btn2;
     TextView tv;
+
 
 
     @Override
@@ -26,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         edUserName=findViewById(R.id.editTextLoginUserName);
         edPassword=findViewById(R.id.editTextLoginPassword);
         btn=findViewById(R.id.buttonLogin);
+
         tv=findViewById(R.id.textViewNewUser);
         Database db=new Database(getApplicationContext(),"healthcare",null,1);
 
@@ -46,8 +48,9 @@ public class LoginActivity extends AppCompatActivity {
                         editor.putString("username",username);
                         //to save our data with key and value
                         editor.apply();
-
                         startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+
+
                     }
                     else
                         Toast.makeText(getApplicationContext(), "Invalid UserName or Password", Toast.LENGTH_SHORT).show();
